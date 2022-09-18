@@ -53,7 +53,8 @@ function MenuAppBar() {
     const onLoad= async () => {
       if(user?.uid){
         const usered=await UserStore.getById(user?.uid);    
-        swal(`Hello to ${usered?.firstName} ${usered?.lastName}`);
+        swal(`Hello to ${usered?.firstName} ${usered?.lastName}
+        \n We Happy to see you! 😍`);
       }
        
     }

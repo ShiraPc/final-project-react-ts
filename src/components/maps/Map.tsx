@@ -187,7 +187,7 @@ const generateHouses= ()=>
   let data;
   const h: Array<LatLngLiteral>=[];
   try {
-        axios.get('http://localhost:3333/location').then((res)=>{data=res
+        axios.get('https://final-waze-project.uc.r.appspot.com/location').then((res)=>{data=res
        res.data.forEach((l: { location_geolocation: { lat: any; len: any; }; })=>{h.push({
        lat:l.location_geolocation.lat,
        lng:l.location_geolocation.len

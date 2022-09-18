@@ -8,7 +8,7 @@ export const deleteSystem=async(id:string)=>
 {
     try {     
         console.log('delete system',id);
-        return await axios.delete(`http://localhost:3333/system/${id}`)
+        return await axios.delete(`https://final-waze-project.uc.r.appspot.com/system/${id}`)
     } 
     catch (error) { 
         console.log(error);}
@@ -16,7 +16,7 @@ export const deleteSystem=async(id:string)=>
 export const addSystem=async(dataSystem:System )=>
 {
     try {     
-        const res = await axios.post(`http://localhost:3333/system/`,dataSystem);
+        const res = await axios.post(`https://final-waze-project.uc.r.appspot.com/system/`,dataSystem);
         console.log(res.data);
         return res.data;
     }
@@ -25,7 +25,7 @@ export const addSystem=async(dataSystem:System )=>
 export const getAllSystem=async()=>
 {
     try {
-        const systems = await axios.get('http://localhost:3333/system');
+        const systems = await axios.get('https://final-waze-project.uc.r.appspot.com/system');
         return systems.data;
     }
     catch (error) {
@@ -35,10 +35,10 @@ export const getAllSystem=async()=>
 export const getSystems=async(managerUid:string)=>
 {
     try {
-        const userByUid = await axios.get(`http://localhost:3333/user/${managerUid}`);
+        const userByUid = await axios.get(`https://final-waze-project.uc.r.appspot.com/user/${managerUid}`);
         const user_id= (userByUid.data._id);
         console.log(user_id);
-        const getSystemsUser=await axios.get(`http://localhost:3333/system/${user_id}`);
+        const getSystemsUser=await axios.get(`https://final-waze-project.uc.r.appspot.com/system/${user_id}`);
         console.log(getSystemsUser.data);
         return getSystemsUser.data;
     }
@@ -48,7 +48,7 @@ export const getSystems=async(managerUid:string)=>
 }
 export const getSystemsByUrlName = async (urlName: string) => {
     try {
-        const system = await axios.get(`http://localhost:3333/system/getSystemByUrlName/${urlName}`)
+        const system = await axios.get(`https://final-waze-project.uc.r.appspot.com/system/getSystemByUrlName/${urlName}`)
         console.log(system.data);
         return system.data;
     } catch (error) {

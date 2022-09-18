@@ -5,7 +5,7 @@ import Location from "../interfaces/Location";
  
 const getLocations = async () => {
     try {
-        const locations = await axios.get(`http://localhost:3333/location`);
+        const locations = await axios.get(`https://final-waze-project.uc.r.appspot.com/location`);
         return locations.data;
     } catch (error) {
         console.error(error);
@@ -14,7 +14,7 @@ const getLocations = async () => {
 
 const getLocationsBySystemId = async (id:string) => {
     try {
-        const locations = await axios.get(`http://localhost:3333/location/${id}`);
+        const locations = await axios.get(`https://final-waze-project.uc.r.appspot.com/location/${id}`);
         return locations.data;
     } catch (error) {
         console.error(error);
@@ -23,7 +23,7 @@ const getLocationsBySystemId = async (id:string) => {
 
 const createLocationsBySystemId = async (location: Location) => {
     try {
-        const newLocation = await axios.post(`http://localhost:3333/location`, location);
+        const newLocation = await axios.post(`https://final-waze-project.uc.r.appspot.com/location`, location);
         return newLocation.data;
     } catch (error) {
         console.error(error);
@@ -33,7 +33,7 @@ const createLocationsBySystemId = async (location: Location) => {
 
 const deleteLocation = async (id: string) => {
     try {
-        await axios.delete(`http://localhost:3333/location/${id}`);
+        await axios.delete(`https://final-waze-project.uc.r.appspot.com/location/${id}`);
     } catch (error) {
         console.error(error);
     }
@@ -41,7 +41,7 @@ const deleteLocation = async (id: string) => {
 
 const updateLocation = async (id: string, location: Location) => {
     try {
-        const newLocation = await axios.put(`http://localhost:3333/location/${id}`, location);
+        const newLocation = await axios.put(`https://final-waze-project.uc.r.appspot.com/location/${id}`, location);
         return newLocation.data;
     } catch (error) {
         console.error(error);

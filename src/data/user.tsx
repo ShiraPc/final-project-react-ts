@@ -4,7 +4,7 @@ import User from '../interfaces/User';
 
 export const getAllUsers = async () => {
     try {
-        const users = await axios.get('http://localhost:3333/user');
+        const users = await axios.get('https://final-waze-project.uc.r.appspot.com/user');
         console.log(users.data);
         return users.data;
     }
@@ -14,7 +14,7 @@ export const getAllUsers = async () => {
 }
 export const getUserById = async (uid: string) => {
     try {
-        const user = await axios.get(`http://localhost:3333/user/${uid}`);
+        const user = await axios.get(`https://final-waze-project.uc.r.appspot.com/user/${uid}`);
         console.log(user.data);
         return (user.data);
     }
@@ -24,7 +24,7 @@ export const getUserById = async (uid: string) => {
 }
 export async function createUser(newUser:User){
     try {
-    const user= await axios.post('http://localhost:3333/user/', newUser);
+    const user= await axios.post('https://final-waze-project.uc.r.appspot.com/user/', newUser);
     console.log(user.data);
     }
     catch (error) {

@@ -5,7 +5,7 @@ import Manager from "../interfaces/Manager";
 export const getManager = async (managerId:string) => {
 
     try {
-        const res= await axios.get(`http://localhost:3333/manager/${managerId}`);
+        const res= await axios.get(`https://final-waze-project.uc.r.appspot.com/manager/${managerId}`);
         return res.data;
     } catch (error) {
         console.error(error);
@@ -15,7 +15,7 @@ export const getManager = async (managerId:string) => {
 export const createManager = async (manager:Manager) => {
 
     try {
-        const res= await axios.post(`http://localhost:3333/manager`,manager);
+        const res= await axios.post(`https://final-waze-project.uc.r.appspot.com/manager`,manager);
         return res.data;
     } catch (error) {
         console.error(error);

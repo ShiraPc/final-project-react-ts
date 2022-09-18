@@ -77,14 +77,14 @@ import swal from 'sweetalert';
         <div className="d-grid">
           <Button type="button" className="btn btn-primary"
             onClick={() => logInWithEmailAndPassword(email, password)}>
-            Submit
+            Submit🥰
           </Button>
         </div>
          <div className="mb-3">
               <div className="d-grid">
               <Button type="button" className="login-with-google-btn"
               onClick={signInWithGoogle} >
-                Sign in with Google
+                Sign in with Google😀
              </Button>
           </div>
           </div>
@@ -94,12 +94,12 @@ import swal from 'sweetalert';
             Customers? Enter without registered😉
           </Button>
         </div>
-        <p className="forgot-password text-right">
-          Forgot <a href="#">password?</a>
-        </p>
-        <p className="forgot-password text-right">
-          Already registered <a href="/signUp">Sign Up</a>
-        </p>
+        <Button type="button" className="forgot-password text-right">
+          Forgot <a href="#"> your password?🤥</a>
+        </Button>
+        <Button className="forgot-password text-right">
+          Not registered yet?🤔 <a href="/signUp">Sign Up</a>
+        </Button>
        
      </Box> 
       </div> )

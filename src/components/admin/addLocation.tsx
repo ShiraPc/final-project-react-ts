@@ -70,7 +70,7 @@ export function FormDialogLocation() {
         }
         console.log(dataLocation)
         try {     
-            const res = await axios.post(`http://localhost:3333/location/`,dataLocation);
+            const res = await axios.post(`https://final-waze-project.uc.r.appspot.com/location/`,dataLocation);
             let tempList = await res.data;
             console.log(res)
             alert(`add ${dataLocation.name} successfully`);

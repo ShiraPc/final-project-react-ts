@@ -155,9 +155,9 @@ console.log("create failed");
              </Button>
           </div>
         </div>
-        <p className="forgot-password text-right">
+        <Button type="button" className="forgot-password text-right">
           Already registered <a href="/login">sign in?</a>
-        </p>
+        </Button>
         </Box>
       </form>
     )

@@ -71,10 +71,11 @@ const MyHome = () => {
                                     <div>{system.subject}</div>
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    <div>
+                                <div>
                                         <th>id: {system._id}</th>
                                         <tr>manager_id  :{system.manager_id}</tr>           
-                                        <tr>subject  :{system.subject}</tr> 
+                                        <tr>subject  :{system.subject}</tr>
+                                        <tr>description  :{system.description}</tr> 
                                         <br /> 
                                     </div>
                                 </Typography>

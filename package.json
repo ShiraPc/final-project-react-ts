@@ -20,6 +20,7 @@
     "bootstrap": "^5.2.0",
     "dom": "^0.0.3",
     "firebase": "^9.9.2",
+    "firebase-functions": "^3.23.0",
     "mobx": "^6.6.1",
     "mobx-react": "^7.5.2",
     "mobx-react-lite": "^3.4.0",

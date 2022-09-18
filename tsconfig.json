@@ -22,7 +22,7 @@
   },
   "include": [
     "src"
-, "allFirebase/addTask.js"  ]
+, "src/allFirebase/addTask.js"  ]
   
 
 }

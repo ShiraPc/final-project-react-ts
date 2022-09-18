@@ -12,7 +12,8 @@ import '../src/css/app.css';
 import MyHome from './components/system/myHome';
 
 function App() {
-
+  const urlServer="https://final-waze-project.uc.r.appspot.com";
+  
   return (
     <div className="app">
 
